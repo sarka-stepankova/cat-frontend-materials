@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.2.16)  18 FEB 2024 00:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.2.16)  18 FEB 2024 13:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -557,27 +557,24 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  (./kap01.tex
 Kapitola 1.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 39.
-(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 49.
- (/usr/share/texmf/tex/latex/lm/t1lmss.fd
-File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [4
 
 
 
 
-] [5]
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 171.
-) [6]
+]
 \openout2 = `kap02.aux'.
 
  (./kap02.tex
 Kapitola 2.
-) [7
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 6.
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 7.
+ (/usr/share/texmf/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)) [5
 
 
 
@@ -591,36 +588,38 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 52.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 52.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 52.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 62.
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [8
+) [6
 
 
 
 
-] [9]
-<../img/ukazka-obr01.pdf, id=249, 433.62pt x 433.62pt>
+] [7]
+<../img/ukazka-obr01.pdf, id=201, 433.62pt x 433.62pt>
 File: ../img/ukazka-obr01.pdf Graphic file (type pdf)
 <use ../img/ukazka-obr01.pdf>
 Package pdftex.def Info: ../img/ukazka-obr01.pdf  used on input line 156.
 (pdftex.def)             Requested size: 398.3596pt x 398.3596pt.
-<../img/ukazka-obr02.pdf, id=250, 433.62pt x 433.62pt>
+<../img/ukazka-obr02.pdf, id=202, 433.62pt x 433.62pt>
 File: ../img/ukazka-obr02.pdf Graphic file (type pdf)
 <use ../img/ukazka-obr02.pdf>
 Package pdftex.def Info: ../img/ukazka-obr02.pdf  used on input line 165.
 (pdftex.def)             Requested size: 398.3596pt x 398.3596pt.
-<../img/ukazka-obr03.pdf, id=251, 433.62pt x 614.295pt>
+<../img/ukazka-obr03.pdf, id=203, 433.62pt x 614.295pt>
 File: ../img/ukazka-obr03.pdf Graphic file (type pdf)
 <use ../img/ukazka-obr03.pdf>
 Package pdftex.def Info: ../img/ukazka-obr03.pdf  used on input line 171.
 (pdftex.def)             Requested size: 398.3596pt x 563.39606pt.
-) [10] [11 <../img/ukazka-obr01.pdf>] [12 <../img/ukazka-obr02.pdf>] [13 <../img/ukazka-obr03.pdf>]
+) [8] [9 <../img/ukazka-obr01.pdf>] [10 <../img/ukazka-obr02.pdf>] [11 <../img/ukazka-obr03.pdf>]
 \openout2 = `kap04.aux'.
 
  (./kap04.tex
 Kapitola 4.
-) [14
+) [12
 
 
 
@@ -628,7 +627,7 @@ Kapitola 4.
 ]
 \openout2 = `zaver.aux'.
 
- (./zaver.tex) [15
+ (./zaver.tex) [13
 
 
 
@@ -636,7 +635,7 @@ Kapitola 4.
 ]
 \openout2 = `literatura.aux'.
 
- (./literatura.tex (./prace.bbl)) [16
+ (./literatura.tex (./prace.bbl)) [14
 
 
 
@@ -645,7 +644,7 @@ Kapitola 4.
 \tf@lof=\write7
 \openout7 = `prace.lof'.
 
- [17
+ [15
 
 
 
@@ -653,31 +652,31 @@ Kapitola 4.
 \tf@lot=\write8
 \openout8 = `prace.lot'.
 
- [18
+ [16
 
-] [19
+] [17
 
 ]
 P\v {r}\'{\i }loha A.
-[20
+[18
 
 ] (./prace.aux (./titulka.aux) (./uvod.aux) (./kap01.aux) (./kap02.aux) (./kap03.aux) (./kap04.aux) (./zaver.aux) (./literatura.aux))
 Package rerunfilecheck Info: File `prace.out' has not changed.
-(rerunfilecheck)             Checksum: AE0BE14AE6FF962EBBCD34FC89C09E57;2526.
+(rerunfilecheck)             Checksum: 5B0AFACB80278BEFCDC570DE17B5341C;2323.
  ) 
 Here is how much of TeX's memory you used:
- 16574 strings out of 478287
- 256194 string characters out of 5849289
- 546370 words of memory out of 5000000
- 34321 multiletter control sequences out of 15000+600000
- 589366 words of font info for 105 fonts, out of 8000000 for 9000
+ 16535 strings out of 478287
+ 255761 string characters out of 5849289
+ 538892 words of memory out of 5000000
+ 34299 multiletter control sequences out of 15000+600000
+ 563882 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 77i,19n,79p,563b,2377s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on prace.pdf (20 pages, 718695 bytes).
+ 77i,11n,79p,563b,2377s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
+Output written on prace.pdf (18 pages, 664370 bytes).
 PDF statistics:
- 453 PDF objects out of 1000 (max. 8388607)
- 346 compressed objects within 4 object streams
- 45 named destinations out of 1000 (max. 500000)
+ 379 PDF objects out of 1000 (max. 8388607)
+ 299 compressed objects within 3 object streams
+ 34 named destinations out of 1000 (max. 500000)
  193 words of extra memory for PDF output out of 10000 (max. 10000000)
 
