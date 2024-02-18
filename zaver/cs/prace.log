@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.2.16)  18 FEB 2024 13:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.2.16)  18 FEB 2024 16:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -709,7 +709,7 @@ Package todonotes Warning: The length marginparwidth is less than 2cm and will m
 
 (./titulka.tex
 Package hyperref Info: Option `pageanchor' set `false' on input line 6.
-<../img/logo-cs.pdf, id=90, 506.4591pt x 156.49065pt>
+<../img/logo-cs.pdf, id=106, 506.4591pt x 156.49065pt>
 File: ../img/logo-cs.pdf Graphic file (type pdf)
 <use ../img/logo-cs.pdf>
 Package pdftex.def Info: ../img/logo-cs.pdf  used on input line 10.
@@ -758,7 +758,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ]
 \openout2 = `uvod.aux'.
 
- (./uvod.tex) [3
+ (./uvod.tex
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 14.
+) [3
 
 
 ]
@@ -766,7 +768,6 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  (./kap01.tex
 Kapitola 1.
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 4.
 ) [4
 
 
@@ -777,19 +778,12 @@ Package hyperref Info: bookmark level for unknown todo defaults to 0 on input li
 
  (./kap02.tex
 Kapitola 2.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 6.
-(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 7.
- (/usr/share/texmf/tex/latex/lm/t1lmss.fd
-File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [5
+[5
 
 
 
 
-]
+] [6]) [7]
 \openout2 = `kap03.aux'.
 
  (./kap03.tex
@@ -803,33 +797,37 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 62.
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [6
+)
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 66.
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [8
 
 
 
 
-] [7]
-<../img/ukazka-obr01.pdf, id=205, 433.62pt x 433.62pt>
+] [9]
+<../img/ukazka-obr01.pdf, id=195, 433.62pt x 433.62pt>
 File: ../img/ukazka-obr01.pdf Graphic file (type pdf)
 <use ../img/ukazka-obr01.pdf>
 Package pdftex.def Info: ../img/ukazka-obr01.pdf  used on input line 156.
 (pdftex.def)             Requested size: 398.3596pt x 398.3596pt.
-<../img/ukazka-obr02.pdf, id=206, 433.62pt x 433.62pt>
+<../img/ukazka-obr02.pdf, id=196, 433.62pt x 433.62pt>
 File: ../img/ukazka-obr02.pdf Graphic file (type pdf)
 <use ../img/ukazka-obr02.pdf>
 Package pdftex.def Info: ../img/ukazka-obr02.pdf  used on input line 165.
 (pdftex.def)             Requested size: 398.3596pt x 398.3596pt.
-<../img/ukazka-obr03.pdf, id=207, 433.62pt x 614.295pt>
+<../img/ukazka-obr03.pdf, id=197, 433.62pt x 614.295pt>
 File: ../img/ukazka-obr03.pdf Graphic file (type pdf)
 <use ../img/ukazka-obr03.pdf>
 Package pdftex.def Info: ../img/ukazka-obr03.pdf  used on input line 171.
 (pdftex.def)             Requested size: 398.3596pt x 563.39606pt.
-) [8] [9 <../img/ukazka-obr01.pdf>] [10 <../img/ukazka-obr02.pdf>] [11 <../img/ukazka-obr03.pdf>]
+) [10] [11 <../img/ukazka-obr01.pdf>] [12 <../img/ukazka-obr02.pdf>] [13 <../img/ukazka-obr03.pdf>]
 \openout2 = `kap04.aux'.
 
  (./kap04.tex
 Kapitola 4.
-) [12
+) [14
 
 
 
@@ -837,7 +835,7 @@ Kapitola 4.
 ]
 \openout2 = `zaver.aux'.
 
- (./zaver.tex) [13
+ (./zaver.tex) [15
 
 
 
@@ -845,7 +843,11 @@ Kapitola 4.
 ]
 \openout2 = `literatura.aux'.
 
- (./literatura.tex (./prace.bbl)) [14
+ (./literatura.tex (./prace.bbl
+
+Package natbib Warning: Empty `thebibliography' environment on input line 8.
+
+)) [16
 
 
 
@@ -854,7 +856,7 @@ Kapitola 4.
 \tf@lof=\write8
 \openout8 = `prace.lof'.
 
- [15
+ [17
 
 
 
@@ -862,31 +864,31 @@ Kapitola 4.
 \tf@lot=\write9
 \openout9 = `prace.lot'.
 
- [16
+ [18
 
-] [17
+] [19
 
 ]
 P\v {r}\'{\i }loha A.
-[18
+[20
 
 ] (./prace.aux (./titulka.aux) (./uvod.aux) (./kap01.aux) (./kap02.aux) (./kap03.aux) (./kap04.aux) (./zaver.aux) (./literatura.aux))
 Package rerunfilecheck Info: File `prace.out' has not changed.
-(rerunfilecheck)             Checksum: 40C46CFC43A1D53F67E51B6DF33C833C;2308.
+(rerunfilecheck)             Checksum: 48C62D942F58C3453ADD9AD86C4FD774;3285.
  ) 
 Here is how much of TeX's memory you used:
- 27157 strings out of 478287
- 489181 string characters out of 5849289
- 737345 words of memory out of 5000000
- 44692 multiletter control sequences out of 15000+600000
- 563882 words of font info for 97 fonts, out of 8000000 for 9000
+ 27099 strings out of 478287
+ 488102 string characters out of 5849289
+ 738052 words of memory out of 5000000
+ 44642 multiletter control sequences out of 15000+600000
+ 564300 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,94p,563b,2377s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on prace.pdf (18 pages, 665106 bytes).
+ 99i,11n,94p,721b,2377s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
+Output written on prace.pdf (20 pages, 622469 bytes).
 PDF statistics:
- 384 PDF objects out of 1000 (max. 8388607)
- 303 compressed objects within 4 object streams
- 35 named destinations out of 1000 (max. 500000)
- 205 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 365 PDF objects out of 1000 (max. 8388607)
+ 287 compressed objects within 3 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 237 words of extra memory for PDF output out of 10000 (max. 10000000)
 

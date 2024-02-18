@@ -10,45 +10,47 @@ A level-1 auxiliary file: kap04.aux
 A level-1 auxiliary file: zaver.aux
 A level-1 auxiliary file: literatura.aux
 The style file: czplainnat.bst
+I found no \citation commands---while reading file prace.aux
 Database file #1: literatura.bib
-You've used 8 entries,
+You've used 0 entries,
             2828 wiz_defined-function locations,
-            677 strings with 6251 characters,
-and the built_in function-call counts, 3609 in all, are:
-= -- 320
-> -- 205
-< -- 6
-+ -- 71
-- -- 63
-* -- 318
-:= -- 580
-add.period$ -- 30
-call.type$ -- 8
-change.case$ -- 42
-chr.to.int$ -- 8
-cite$ -- 16
-duplicate$ -- 159
-empty$ -- 288
-format.name$ -- 75
-if$ -- 736
+            614 strings with 5000 characters,
+and the built_in function-call counts, 33 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 10
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 11
-newline$ -- 51
-num.names$ -- 32
-pop$ -- 81
+missing$ -- 0
+newline$ -- 8
+num.names$ -- 0
+pop$ -- 0
 preamble$ -- 1
-purify$ -- 37
+purify$ -- 0
 quote$ -- 0
-skip$ -- 103
+skip$ -- 1
 stack$ -- 0
-substring$ -- 119
-swap$ -- 21
+substring$ -- 0
+swap$ -- 0
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 73
+type$ -- 0
 warning$ -- 0
-while$ -- 33
+while$ -- 0
 width$ -- 0
-write$ -- 120
+write$ -- 7
+(There was 1 error message)
