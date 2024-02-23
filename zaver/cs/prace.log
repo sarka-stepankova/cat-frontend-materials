@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.2.16)  21 FEB 2024 15:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.2.16)  23 FEB 2024 20:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -764,49 +764,57 @@ Package hyperref Info: bookmark level for unknown todo defaults to 0 on input li
 
  (./kap01.tex
 Kapitola 1.
-) [4
+
+
+pdfTeX warning: pdflatex (file ../img/mm-cat.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<../img/mm-cat.pdf, id=150, 1718.42pt x 943.525pt>
+File: ../img/mm-cat.pdf Graphic file (type pdf)
+<use ../img/mm-cat.pdf>
+Package pdftex.def Info: ../img/mm-cat.pdf  used on input line 17.
+(pdftex.def)             Requested size: 388.64684pt x 213.39566pt.
+[4
 
 
 
 
-]
+ <../img/mm-cat.pdf>]) [5]
 \openout2 = `kap02.aux'.
 
  (./kap02.tex
 Kapitola 2.
-[5
+[6
 
 
 
 
-] [6]) [7]
+] [7]) [8]
 \openout2 = `kap03.aux'.
 
  (./kap03.tex
 Kapitola 3.
-<../img/HTA-1.pdf, id=174, 523.9575pt x 253.90858pt>
+<../img/HTA-1.pdf, id=183, 523.9575pt x 253.90858pt>
 File: ../img/HTA-1.pdf Graphic file (type pdf)
 <use ../img/HTA-1.pdf>
 Package pdftex.def Info: ../img/HTA-1.pdf  used on input line 15.
 (pdftex.def)             Requested size: 410.99574pt x 199.16928pt.
-[8
+[9
 
 
 
 
- <../img/HTA-1.pdf>]) [9]
+ <../img/HTA-1.pdf>]) [10]
 \openout2 = `kap04.aux'.
 
  (./kap04.tex
 Kapitola 4.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 15.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 13.
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 27.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 25.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [10
+)) [11
 
 
 
@@ -814,7 +822,7 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ]
 \openout2 = `zaver.aux'.
 
- (./zaver.tex) [11
+ (./zaver.tex) [12
 
 
 
@@ -822,7 +830,7 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ]
 \openout2 = `literatura.aux'.
 
- (./literatura.tex (./prace.bbl)) [12
+ (./literatura.tex (./prace.bbl)) [13
 
 
 
@@ -831,7 +839,7 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \tf@lof=\write8
 \openout8 = `prace.lof'.
 
- [13
+ [14
 
 
 
@@ -839,31 +847,31 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \tf@lot=\write9
 \openout9 = `prace.lot'.
 
- [14
+ [15
 
-] [15
+] [16
 
 ]
 P\v {r}\'{\i }loha A.
-[16
+[17
 
 ] (./prace.aux (./titulka.aux) (./uvod.aux) (./kap01.aux) (./kap02.aux) (./kap03.aux) (./kap04.aux) (./zaver.aux) (./literatura.aux))
 Package rerunfilecheck Info: File `prace.out' has not changed.
 (rerunfilecheck)             Checksum: 45A2921E7CAD9625A03CDBA3ECA24198;3204.
  ) 
 Here is how much of TeX's memory you used:
- 27032 strings out of 478287
- 487000 string characters out of 5849289
- 735012 words of memory out of 5000000
- 44597 multiletter control sequences out of 15000+600000
+ 27043 strings out of 478287
+ 487229 string characters out of 5849289
+ 735092 words of memory out of 5000000
+ 44606 multiletter control sequences out of 15000+600000
  533394 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,7n,94p,721b,2377s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on prace.pdf (16 pages, 530745 bytes).
+Output written on prace.pdf (17 pages, 710041 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
- 218 compressed objects within 3 object streams
- 29 named destinations out of 1000 (max. 500000)
- 211 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 275 PDF objects out of 1000 (max. 8388607)
+ 224 compressed objects within 3 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 216 words of extra memory for PDF output out of 10000 (max. 10000000)
 

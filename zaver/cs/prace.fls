@@ -1301,6 +1301,10 @@ INPUT kap01.tex
 INPUT ./kap01.tex
 INPUT kap01.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr17.tfm
+INPUT ../img/mm-cat.pdf
+INPUT ../img/mm-cat.pdf
+INPUT ../img/mm-cat.pdf
+INPUT ../img/mm-cat.pdf
 INPUT ./kap02.tex
 INPUT ./kap02.tex
 INPUT ./kap02.tex
