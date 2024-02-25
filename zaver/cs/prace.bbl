@@ -1,18 +1,38 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{4}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Genberg a~kol.(2008)Genberg, Kulich, Kawichai, Modiba, Chingono,
-  Kilonzo, Richter, Pettifor, Sweat a Celentano]{Genberget08}
-{\sc Genberg, B.~L., Kulich, M., Kawichai, S., Modiba, P., Chingono, A.,
-  Kilonzo, G.~P., Richter, L., Pettifor, A., Sweat, M. {\rm a} Celentano,
-  D.~D.} (2008).
-\newblock {HIV} risk behaviors in sub-{S}aharan {A}frica and {N}orthern
-  {T}hailand: {B}aseline behavioral data from project {A}ccept.
-\newblock \emph{Journal of Acquired Immune Deficiency Syndrome}, {\bf 49},
-  \penalty0 309--319.
+\bibitem[Koupil a~kol.(2021)Koupil, Svoboda a Holubov{\'{a}}]{MMcat}
+{\sc Koupil, P., Svoboda, M. {\rm a} Holubov{\'{a}}, I.} (2021).
+\newblock {MM}-cat: {A} tool for modeling and transformation of multi-model
+  data using category theory.
+\newblock In \emph{2021 ACM/IEEE International Conference on Model Driven
+  Engineering Languages and Systems Companion (MODELS-C)}, pages 635--639.
+
+\bibitem[Koupil a~kol.(2022{\natexlab{a}})Koupil, B{\'{a}}rt{\'{\i}}k a
+  Holubov{\'{a}}]{MMevocat}
+{\sc Koupil, P., B{\'{a}}rt{\'{\i}}k, J. {\rm a} Holubov{\'{a}}, I.}
+  (2022{\natexlab{a}}).
+\newblock {MM}-evocat: {A} tool for modelling and evolution management of
+  multi-model data.
+\newblock In \emph{Proceedings of the 31st {ACM} International Conference on
+  Information {\&} Knowledge Management, Atlanta, GA, USA, October 17-21,
+  2022}, pages 4892--4896. {ACM}.
+
+\bibitem[Koupil a~kol.(2022{\natexlab{b}})Koupil, Hricko a
+  Holubov{\'{a}}]{MMinfer}
+{\sc Koupil, P., Hricko, S. {\rm a} Holubov{\'{a}}, I.} (2022{\natexlab{b}}).
+\newblock {MM}-infer: {A} tool for {I}nference of {M}ulti-{M}odel {S}chemas.
+\newblock In \emph{Proceedings of the 25th International Conference on
+  Extending Database Technology, {EDBT} 2022, Edinburgh, UK, March 29 - April
+  1, 2022}, pages 2:566--2:569.
+
+\bibitem[Koupil a~kol.(2023)Koupil, Crha a Holubov{\'a}]{MMquecat}
+{\sc Koupil, P., Crha, D. {\rm a} Holubov{\'a}, I.} (2023).
+\newblock {MM}-quecat: {A} tool for unified querying of multi-model data.
+\newblock In \emph{International Conference on Extending Database Technology}.
 
 \end{thebibliography}
