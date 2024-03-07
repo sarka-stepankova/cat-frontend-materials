@@ -1,16 +1,33 @@
 \chapter{Storyboardy}
 
-\todo[inline, color=blue!30]{Psaní v~procesu, zatím jen nápady.}
+Na vytvoření uživatelských skupin a~HTA diagramů navážeme tvořením Storyboardů. Storyboard je náčrt sekvence kroků, které uživatel v~aplikaci provádí. Každý důležitý bod je zaznamenán do buňky. Ty pak skládáme lineárně za sebe, až nám vznikne příběh připomínající komiks. Takové rozdělení umožňuje soustředit se na každý krok zvlášť. Zároveň se jedná o~další techniku, kde můžeme udělat rychlý náčrt a~podle potřeby upravovat. Jeden storyboard nezabere víc než jednu stránku.
 
-Na vytvoření uživatelských skupin a~HTA diagramů navážeme tvořením Storyboardů. Vezmeme vždy reprezentanta každé skupiny uživatelů a~představíme si jeho chování pro jednu vybranou situaci z~diagramu HTA.
+Cílem storyboardu je odvyprávět příbeh o~použití aplikace konkrétním způsobem a~konkrétní personou. Jde nám hlavně o~vizuální zobrazení kroků, které jsme popisovali v~HTA diagramech. Zároveň nám může být návrh nápomocný, abychom si vizualizovali, jak budou uživatelé používat navrhovanou aplikaci a jak bude aplikace v náznacích vypadat.
 
+V našem případě vezmeme reprezentanta každé skupiny uživatelů a~představíme si jeho chování pro jednu vybranou situaci z~námi vytvořeného HTA diagramu.
 
-Storyboard je náčrt sekvence kroků, které uživatel v~aplikaci provádí. Každý důležitý bod je zaznamenán do buňky. Ty pak skládáme lineárně za sebe, až nám vznikne příběh připomínající komiks. Takové rozdělení umožňuje soustředit se na každý krok zvlášť. Zároveň se jedná o~další techniku, kde můžeme udělat rychlý náčrt a~podle potřeby upravovat. Jeden storyboard nezabere víc než jednu stránku.
+\section{Ukázka vytváření storyboardu}
 
-Takové grafické uchopení nám může dát první náznaky toho, jak by mohla aplikace vypadat. Nesnažíme se jít do detailů. Jde nám hlavně o~vizuální zobrazení kroků, které jsme popisovali v~HTA diagramech.
+Jako první začneme se zkušeným uživatelem. V aplikaci bude přidávat dvě různé databázové komponenty (PostgreSQL, MongoDB). Strukturu kroků zachováváme podobnou prvnímu hta (\ref{obr03:hta1}). Chceme zachytit uživatele, který se umí pohybovat v doméně, jenom nepoužíval náš nástroj.
 
-Storyboardy jsou nápomocné pro návrháře, aby si vizualizovali, jak budou uživatelé používat navrhovanou aplikaci. 
+Na Obrázku \ref{obr04:storyboard-1-text} můžeme vidět rychlý návrh obsahu storyboardu. Kroky v buňkách nejdřív místo kreslení popisujeme. Získáme tím přehled všech hlavních kroků, které bude uživatel dělat a ujasníme si, kolik asi bude potřeba buněk.
 
-Technika storyboardů nebyla původně určena pro návrh uživatelského rozhraní. -> Ozdrojovat
+\begin{figure}[htb]
+    \centering
+    \includegraphics[height=150mm]{../img/storyboard-1-rychly-navrh}
+    \caption{Rychlý návrh storyboardu pomocí textu v buňkách.}
+    \label{obr04:storyboard-1-text}
+\end{figure}
 
-Detail comes later zmínit
+V rámci návrhu jsme vytvořili několik iterací. Některé snímky jsme z návrhu vyřadili, protože nebyli potřebné (např. červeně škrtlý snímek). První tři kroky jsme k původnímu návrhu přidávali jako širší úvod do situace.
+
+Dáváme si pozor, abychom se v této fázi návrhu nenechali strhnout detaily, které zatím nejsou potřeba. O prvotních fázích návrhu se zmiňuje i kniha \cite{Refactoring_UI}. Navrhuje jednoduchý způsob, jak se nenechat pohltit detaily jako jsou typy písma, stíny, ikony atd. Podle autorů stačí vzít papír, tlustou fixu a tím si v podstatě znemožnit kreslení malých detailů. My jsme navíc omezení velikostí buněk, do kterých kreslíme.
+
+Při vyjadřování situace pamatujeme na to, že aplikaci momentálně ovládá zkušený uživatel. V  aplikaci se zorientuje rychle a s úkolem nemá problém. Obrázek XXX je kompletní storyboard znázorněný pomocí kreseb místo textu.
+
+I takhle porovnání mezi obrázky je vidět, že se lépe představuje ten druhý, díky vizualizaci... nějak odůvodnit
+
+V návrhu je vidět... třeba to chování uživatele
+
+\todo[inline, color=blue!30]{Tady ten konec ještě chci učesat. Přidat oříznutej obrázek storyboardu.}
+
