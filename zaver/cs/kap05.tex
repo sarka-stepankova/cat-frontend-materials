@@ -24,6 +24,21 @@ Prototyp bude ovládaný osobou, která reprezentuje konání počítače, ale n
 Jak funguje návrh... V nezávislosti na existující aplikaci vytváříme.
 Vytváříme jen pro počítač, ne pro telefon, pro tablet jen pro prohlížení.
 
-Ukázat několik aplikací a porovnat, proč jsme se rozhodli tak a tak to udělat. F-pattern
+Ukázat několik aplikací a porovnat, proč jsme se rozhodli tak a tak to udělat (jedna z nich https://app.sqldbm.com/PostgreSQL/DatabaseExplorer/Draft/). F-pattern
+
+\section{Uživatelské testování}
+
+\todo{Do téhle podkapitoly dát obrázek z průběhu uživatelského testování}
+
+Proč je dobré takový návrh vůbec testovat na uživatelích? (krom toho, že ho můžeme rychle měnit) str. 58 z \cite{Paper_Prototyping} No nitpicky (hnidopišský) feedback. Pokud se chceme vyhnout hnidopišské zpětné vazbě, může nám pomoct low-fidelity návrh. Komponenty nejsou jasně dané, uživatel se spíš zaměří na koncepty a funkčnost. Je totiž očividné, že jsme ještě nespecifikovali vzhled. Zároveň to povzbuzuje uživatele, aby nebyl pasivní, ale sám kreativně přemýšlel nad koncepty. Dokonce není neobvyklé měnit vzhled s uživatelem přímo při testování. Tím, že nedokončený návrh povzbuzuje ke kreativitě, se zabývali výzkumníci v článku \cite{Schumann_1996_AEN}.
+
+Techniky pro pozorování uživatelů. Chceme se připravit, pro maximalizaci užitečnosti dat z otestování. Kroky pro pozorování uživatelů, tak abychom na konci věděli, kde mají uživatelé problém aplikaci používat. 
+Připravit si úkoly, které budou uživatelé dělat. Mělo by se jednat o reálné úkoly, které budou uživatelé v aplikaci nejběžněji dělat. 
+Dál najít uživatele co sedí na persony. Dávat si pozor, aby neznali aplikaci nebo naše názory na ni.
+Pro testování vybrat místo, které je tiché a bez zbytečných vnějších vyrušování.
+Popsat uživateli o co se jedná, že jsou zapojeni do raných fází návrhu. Zdůraznit, že testujeme aplikaci, ne uživatele.
+Poprosit uživatele aby přemýšleli nahlas, aby říkali to co jim přijde na mysl, v průběhu plnění úkolů. Díky tomu prozkoumáme jejich očekávání od produktu, taky jejich úmysly a jejich strategie řešení problémů.
+Upozornit, že nebudeme uživateli pomáhat při plnění úkolů. Je to nejlepší způsob jak zjistit jak uživatelé reálně interagují s aplikací. 
+Po testování zodpovědět zbývající otázky od uživatele. Lze diskutovat, nějaké zajímavé chování, které uživatel měl při testování. Zeptat se na celkový dojem z aplikace. Tohle je popsané v knize \cite{Brenda_1990_art} (kapitola Some Techniques for Observing Users)
 
 
