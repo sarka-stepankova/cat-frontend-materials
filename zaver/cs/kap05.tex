@@ -8,23 +8,38 @@ Po storyboardech, které nám ukázali možné sekvence akcí, vytvoříme proto
 
 \section{Paper prototyping}
 
-Pro navrhování a testování uživatelského rozhraní, ve verzi low-fidelity, jsme si vybrali metodu prototypování na papír (paper prototyping). Celý proces od vytvoření prototypu až po uživatelské testování popisuje detailně kniha \cite{Paper_Prototyping}.
+Pro navrhování a testování uživatelského rozhraní, ve verzi low-fidelity, jsme si vybrali hojně využívanou metodu prototypování na papír (paper prototyping). Celý proces od vytvoření prototypu až po uživatelské testování popisuje detailně kniha Paper prototyping od Carolyn Snyder \cite{Paper_Prototyping}.
 
 Začneme vytvořením papírových komponent aplikace (oken, menu, stránek, dialogových boxů, dat, pop-up zpráv). 
 Po vytvoření prototypu provedeme usability otestování.
-V takovém testování provádí uživatel realistické úkoly na papírovém prototypu. Uživatelé jsou vybraní podle uživatelských skupin, které jsme si definovali na začátku.
-Testováním prováděným uživatelem myslíme jedno sezení s ním. Nejedná se o studii, kdy jsou prováděny série testů použitelnosti během několika dní.
+V takovém testování provádí uživatel, v jednom sezení, realistické úkoly na papírovém prototypu. Nejedná se o studii, kdy jsou prováděny série testů použitelnosti během několika dní. Uživatelé jsou vybraní podle uživatelských skupin, které jsme si definovali na začátku.
 
 Prototyp bude ovládaný osobou, která reprezentuje konání počítače, ale nevysvětluje, jak má rozhraní fungovat. Další zkušený člověk funguje jako zapisující pozorovatel. Pozoruje chování uživatele, zapisuje co uživatel dělá a co říká. Tímto způsobem provedeme velmi rychle iterativní testování na několika uživatelích. V průběhu můžeme aplikaci vylepšovat a všímat si opakujících se vzorů. Každé sezení s uživatelem končí vyplněním dotazníku spokojenosti s aplikací.
 
 \section{Low-fidelity návrh}
 
-Jak funguje návrh... V nezávislosti na existující aplikaci vytváříme.
-Vytváříme jen pro počítač, ne pro telefon, pro tablet jen pro prohlížení.
+Low-fidelity návrh vytvoříme v nezávislosti na existujících aplikacích. V tomto momentě je dobré si ujasnit, na jakém zařízení budeme aplikaci používat. Tak nějak implicitně jsme od začátku předpokládali, že půjde o počítačové rozhraní. Mobilní aplikace se k němu nepřidá, alespoň ne ve verzi s možností úprav. Stejně tak aplikace pro tablety. Tahle zařízení jsou užší a menší. Mají tak méně prostoru pro obsah, navigaci a interakci. Použití modelovacích a složitějších funkčností by tak bylo často složité až nemožné.
+
 Zaměřili jsme se na to, jestli jsou komponenty dostupné, jestli nic nemate uživatele, když má na něco kliknout...
 
+Když se má uživatel někam dostat, tak aby ho nerozptylovaly komponenty a věděl na co chce kliknout
 
-Ukázat několik aplikací a porovnat, proč jsme se rozhodli tak a tak to udělat (jedna z nich https://app.sqldbm.com/PostgreSQL/DatabaseExplorer/Draft/). F-pattern, kam se dostanu po kolika kliknutích, 
+jako inspirace nám posloužili nástroje... (všechny nástroje na webu, protože navrhujeme aplikaci na webu -> uvést tuhle informaci někde nahoře)
+
+nesnažíme se z toho dělat vyloženě závěry, jenom se snažíme poukázat na podobnosti s návrhem person
+
+Ukázat několik aplikací a porovnat, proč jsme se rozhodli tak a tak to udělat (jedna z nich https://app.sqldbm.com/PostgreSQL/DatabaseExplorer/Draft/). F-Pattern, kam se dostanu po kolika kliknutích, F-Pattern se nehodí pro telefony, je dobré F-Pattern použít jako základ, ale vyloženě se tím neřídit (dnes spíš tíhne k rozmanitosti), The F-Pattern is mirrored in right-to-left languages, such as Arabic, aplikace psaná anglicky -> jsme zvyklí číst zleva doprava
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics[height=70mm]{../img/F-Pattern}
+    \caption{F-Pattern layout.}
+    \label{obr03:fpattern}
+  \end{figure}
+
+Subsekce na:
+- existující nástroje, kterýma jsme se inspirovali
+- konkrétní návrh -> popsání hlavní obrazovky, zaměření se na plovoucí komponenty
 
 \section{Uživatelské testování}
 
