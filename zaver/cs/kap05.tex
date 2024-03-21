@@ -6,9 +6,9 @@
 
 Po storyboardech, které nám ukázali možné sekvence akcí, vytvoříme prototyp aplikace, se kterým budou interagovat uživatelé. V rámci ročníkového projektu vytvoříme jen low-fidelity prototyp. Tedy se budeme zabývat vytvořením rané verze aplikace, která nebude věrnou kopií aplikace výsledné. V této fázi, chceme hlavně rychle vytvořit prototyp, na kterém můžeme vyhodnocovat nápady a zároveň ho můžeme otestovat na uživatelích spadajících do jednotlivých uživatelských skupin, které jsme si definovali.
 
-\section{Paper prototyping}
+\section{Paper prototyping (mockups)}
 
-Pro navrhování a testování uživatelského rozhraní ve verzi low-fidelity jsme si vybrali jednu z využívaných metod, prototypování na papír (paper prototyping). Celý proces od vytvoření prototypu až po uživatelské testování popisuje detailně kniha Paper prototyping od Carolyn Snyder \cite{Paper_Prototyping}.
+Pro navrhování a testování uživatelského rozhraní ve verzi low-fidelity jsme si vybrali jednu z využívaných metod, prototypování na papír (paper prototyping). Někdy také nazývaná jako tvorba paper mockupů. Celý proces od vytvoření prototypu až po uživatelské testování popisuje detailně kniha Paper prototyping od Carolyn Snyder \cite{Paper_Prototyping}.
 
 Začneme vytvořením papírových komponent aplikace (oken, menu, stránek, dialogových boxů, dat, pop-up zpráv). 
 Po vytvoření prototypu provedeme usability otestování.
@@ -20,27 +20,49 @@ Prototyp bude ovládaný osobou, která reprezentuje konání počítače, ale n
 
 Papírový prototyp vytvoříme v nezávislosti na existujících aplikacích. V tomto momentě je dobré si ujasnit, na jakém zařízení budeme aplikaci používat. Tak nějak implicitně jsme od začátku předpokládali, že půjde o počítačové rozhraní. Mobilní aplikace se k němu nepřidá, alespoň ne ve verzi s možností úprav. Stejně tak aplikace pro tablety. Tahle zařízení jsou užší a menší. Mají tak méně prostoru pro obsah, navigaci a interakci. Použití modelovacích a složitějších funkčností by tak bylo často složité až nemožné.
 
-Jako inspirace nám posloužili existující webové nástroje a desktopové aplikace.  ... Railway aplikace, Draw.io (hlavně u ER modelování ta obrazovka vlevo)   ... Díky konzistenci v aplikaci uživatelé v posledním úkolu nebyli špatní 
-
-V mockupu popsat jednotlivé komponenty a napsat k nim, tady jsme se inspirovali tím a tím,
-
-Zaměřili jsme se na to, jestli jsou komponenty dostupné, jestli nic nemate uživatele, když má na něco kliknout...
-
-Když se má uživatel někam dostat, tak aby ho nerozptylovaly komponenty a věděl na co chce kliknout
-
-nesnažíme se z toho dělat vyloženě závěry, jenom se snažíme poukázat na podobnosti s návrhem person
-
-Rozložení: F-Pattern, kam se dostanu po kolika kliknutích, F-Pattern se nehodí pro telefony, je dobré F-Pattern použít jako základ, ale vyloženě se tím neřídit (dnes spíš tíhne k rozmanitosti), The F-Pattern is mirrored in right-to-left languages, such as Arabic, aplikace psaná anglicky -> jsme zvyklí číst zleva doprava
+Pro obecné rozložení komponent jsme vzali v úvahu F-Pattern. Je pojmenovaný podle tvaru, který tvoří pohyby očí při skenování a čtení aplikace, připomínající písmeno F (Obr. \ref{obr05:fpattern}). Nehodí se pro telefony, to nás ale neomezuje. Dnes spíš návrh aplikací tíhne k rozmanitosti, proto na něm aplikaci nestavíme, jenom ho bereme v potaz. Hlavním jazykem aplikace bude angličtina. Uživatelé jsou zvyklí číst zleva doprava, proto je pattern orientovaný stejným směrem.
 
 \begin{figure}[htb]
     \centering
     \includegraphics[height=70mm]{../img/F-Pattern}
     \caption{F-Pattern layout.}
-    \label{obr03:fpattern}
+    \label{obr05:fpattern}
   \end{figure}
 
-Subsekce na:
-- existující nástroje, kterýma jsme se inspirovali (Ukázat několik aplikací a porovnat, proč jsme se rozhodli tak a tak to udělat (jedna z nich https://app.sqldbm.com/PostgreSQL/DatabaseExplorer/Draft/).)
+Při návrhu se zaměřujeme na dostupnost komponent. Když je třeba důležité jedno tlačítko pro další krok, snažíme se, aby uživatele nic nemátlo a neodvádělo pozornost od tlačítka. 
+
+Úvodní obrazovka je tvořená z levé lišty, která obsahuje tlačítka pro otevření hlavních částí aplikace (spojení s databázovými instancemi, modelování, vytváření mapování) a volný prostor (Obr. \ref{obr05:uvodni-obrazovka}). Podobnou lištu lze nalézt například v nástrojích pgModeler, sqlDMB (Obr. \ref{obr05:sqlDBM-leva-lista}) a VS Code (Obr. \ref{obr05:vs-code-uvod}). Počítáme s tím, že až budou přibývat funkčnosti dalších nástrojů, budou přibývat tlačítka v levé liště.
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[height=70mm]{../img/uvodni-obrazovka}
+  \caption{Papírový prototyp úvodní obrazovky.}
+  \label{obr05:uvodni-obrazovka}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[height=100mm]{../img/sqlDBM-leva-lista}
+  \caption{Ukázka levé lišty v aplikaci sqlDBM.}
+  \label{obr05:sqlDBM-leva-lista}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[height=100mm]{../img/vs-code-uvod}
+  \caption{Ukázka levé lišty a úvodní obrazovky v nástroji VS Code.}
+  \label{obr05:vs-code-uvod}
+\end{figure}
+
+Jako inspirace nám posloužily existující webové nástroje a desktopové aplikace.  ... Railway aplikace, Draw.io (hlavně u ER modelování ta obrazovka vlevo) 
+V mockupu popsat jednotlivé komponenty a napsat k nim, tady jsme se inspirovali tím a tím,
+
+První nástroj (nějak upřesnit), levá lišta s adresářovou strukturou podobná liště ve VS Code a sqlDBM. Pak jen formulář a náhled (podobné).
+
+Draw.io hlavně pro druhou část (modelování schémat) - inspirace u ER. Ponechávat co největší bílé okno pro pohodlné modelování a dost místa na umísťování komponent.
+
+Další nápady:
+- Přirozené používání - nevymýšlíme si nic šíleného, inspirace UI jiných nástrojů, aby se uživatel ocitl v pro něj známém (intuitivním) prostředí.
 - konkrétní návrh -> popsání hlavní obrazovky, zaměření se na plovoucí komponenty
 
 \section{Uživatelské testování}
@@ -63,3 +85,7 @@ Po otestování zodpovíme zbývající otázky od uživatele. Případně disku
 Pro otestování jsme získali tolik a tolik uživatelů.
 
 mám 2 zdroje, dotazník a zápisky z testování...
+
+... Díky konzistenci v aplikaci uživatelé v posledním úkolu nebyli špatní
+
+Úvodní obrazovka je tvořená z levé lišty, která obsahuje tlačítka pro otevření hlavních částí aplikace a z volného prostoru -> z toho závěr: volný prostor nahradit úvodem s nějakou základní nápovědou pro uživatele. Tu jsme tam nedávali hned na začátku, ale nakonec nás to napadlo a uživatelé to potvrdily (+ odkaz na úvodní vs code obrázek)
