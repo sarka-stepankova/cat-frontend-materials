@@ -18,7 +18,7 @@ Prototyp bude ovládaný osobou, která reprezentuje konání počítače, ale n
 
 \subsection{Vytváření prototypu}
 
-Papírový prototyp vytvoříme v nezávislosti na existujících aplikacích. V tomto momentě je dobré si ujasnit, na jakém zařízení budeme aplikaci používat. Tak nějak implicitně jsme od začátku předpokládali, že půjde o počítačové rozhraní. Mobilní aplikace se k němu nepřidá, alespoň ne ve verzi s možností úprav. Stejně tak aplikace pro tablety. Tahle zařízení jsou užší a menší. Mají tak méně prostoru pro obsah, navigaci a interakci. Použití modelovacích a složitějších funkčností by tak bylo často složité až nemožné.
+Papírový prototyp vytvoříme v nezávislosti na existujících aplikacích popsaných v 1. kapitole. V tomto momentě je dobré si ujasnit, na jakém zařízení budeme aplikaci používat. Implicitně jsme od začátku předpokládali, že půjde o počítačové rozhraní. Mobilní aplikace se k němu nepřidá, alespoň ne ve verzi s možností úprav. Stejně tak aplikace pro tablety. Tahle zařízení jsou užší a menší. Mají tak méně prostoru pro obsah, navigaci a interakci. Použití modelovacích a složitějších funkčností by bylo často složité až nemožné.
 
 Pro obecné rozložení komponent jsme vzali v úvahu F-Pattern. Je pojmenovaný podle tvaru, který tvoří pohyby očí při skenování a čtení aplikace, připomínající písmeno F (Obr. \ref{obr05:fpattern}). Nehodí se pro telefony, to nás ale neomezuje. Dnes spíš návrh aplikací tíhne k rozmanitosti, proto na něm aplikaci nestavíme, jenom ho bereme v potaz. Hlavním jazykem aplikace bude angličtina. Uživatelé jsou zvyklí číst zleva doprava, proto je pattern orientovaný stejným směrem.
 
@@ -29,40 +29,29 @@ Pro obecné rozložení komponent jsme vzali v úvahu F-Pattern. Je pojmenovaný
     \label{obr05:fpattern}
   \end{figure}
 
-Při návrhu se zaměřujeme na dostupnost komponent. Když je třeba důležité jedno tlačítko pro další krok, snažíme se, aby uživatele nic nemátlo a neodvádělo pozornost od tlačítka. 
+Při návrhu se zaměřujeme na dostupnost různých částí aplikace. U těch, které jsou často používané se snažíme minimalizovat počet kliků, díky nimž se k hledané informaci dostaneme. Vezměme si jako příklad otevření formuláře pro přidání databázové instance. Na jeho otevření nám poslouží přesun jedním kliknutím do okna se správou databázových instancí a na něm tlačítko pro přidání, které je na stránce nejvýraznější.
 
-Úvodní obrazovka je tvořená z levé lišty, která obsahuje tlačítka pro otevření hlavních částí aplikace (spojení s databázovými instancemi, modelování, vytváření mapování) a volný prostor (Obr. \ref{obr05:uvodni-obrazovka}). Podobnou lištu lze nalézt například v nástrojích pgModeler, sqlDMB (Obr. \ref{obr05:sqlDBM-leva-lista}) a VS Code (Obr. \ref{obr05:vs-code-uvod}). Počítáme s tím, že až budou přibývat funkčnosti dalších nástrojů, budou přibývat tlačítka v levé liště.
+Neoficiální pravidlo tří kliků (3-click rule) tvrdí, že přístup k jakékoli informaci v aplikaci by neměl být delší než tři kliknutí. Vzniklo z přesvědčení, že budou uživatelé frustrovaní a opustí aplikaci, když nenaleznou hledanou informaci do tří kliků. Pravidlo je ale příliš zjednodušené a nezohledňuje složité interakce. Dosažení nízkého počtu kliků s sebou nese riziko, že budeme ignorovat vše ostatní. Může vést i k frustraci uživatelů způsobené obšírnými navigacemi. Proto se pravidlem přímo neřídíme, ale snažíme se minimalizovat počet kliků, když to jde.
+
+Chceme, aby se uživatel ocitl v pro něj známém (intuitivním) prostředí. Jako inspirace nám posloužily existující webové nástroje a desktopové aplikace. Úvodní obrazovka je tvořená z levé lišty (Obr. \ref{obr05:listy}), která obsahuje tlačítka pro otevření hlavních částí aplikace (spojení s databázovými instancemi, modelování, vytváření mapování), a volného prostoru. Podobnou lištu lze nalézt například v nástrojích pgModeler\footnote{\url{https://pgmodeler.io/}}, sqlDMB\footnote{\url{https://sqldbm.com/Home/}} a VS Code\footnote{\url{https://code.visualstudio.com/}}. Počítáme s tím, že až budou přibývat funkčnosti dalších nástrojů, budou přibývat tlačítka v levé liště.
 
 \begin{figure}[htb]
   \centering
-  \includegraphics[height=70mm]{../img/uvodni-obrazovka}
-  \caption{Papírový prototyp úvodní obrazovky.}
-  \label{obr05:uvodni-obrazovka}
+  \includegraphics[height=70mm]{../img/listy}
+  \caption{Porovnání papírové lišty (vlevo) s lištami existujících aplikací}
+  \label{obr05:listy}
 \end{figure}
 
-\begin{figure}
-  \centering
-  \includegraphics[height=100mm]{../img/sqlDBM-leva-lista}
-  \caption{Ukázka levé lišty v aplikaci sqlDBM.}
-  \label{obr05:sqlDBM-leva-lista}
-\end{figure}
+V části aplikace pro správu databázových instancí vytvoříme lištu s již existujícími spojeními a jednoduchý formulář, který bude umožňovat přidání nové instance.
 
-\begin{figure}
-  \centering
-  \includegraphics[height=100mm]{../img/vs-code-uvod}
-  \caption{Ukázka levé lišty a úvodní obrazovky v nástroji VS Code.}
-  \label{obr05:vs-code-uvod}
-\end{figure}
-
-Jako inspirace nám posloužily existující webové nástroje a desktopové aplikace.  ... Railway aplikace, Draw.io (hlavně u ER modelování ta obrazovka vlevo) 
+  ... Railway aplikace, Draw.io (hlavně u ER modelování ta obrazovka vlevo) 
 V mockupu popsat jednotlivé komponenty a napsat k nim, tady jsme se inspirovali tím a tím,
 
-První nástroj (nějak upřesnit), levá lišta s adresářovou strukturou podobná liště ve VS Code a sqlDBM. Pak jen formulář a náhled (podobné).
+Pak jen formulář a náhled (podobné).
 
 Draw.io hlavně pro druhou část (modelování schémat) - inspirace u ER. Ponechávat co největší bílé okno pro pohodlné modelování a dost místa na umísťování komponent.
 
 Další nápady:
-- Přirozené používání - nevymýšlíme si nic šíleného, inspirace UI jiných nástrojů, aby se uživatel ocitl v pro něj známém (intuitivním) prostředí.
 - konkrétní návrh -> popsání hlavní obrazovky, zaměření se na plovoucí komponenty
 
 \section{Uživatelské testování}
@@ -82,10 +71,22 @@ Po otestování zodpovíme zbývající otázky od uživatele. Případně disku
 
 \todo{Do téhle podkapitoly dát obrázek z průběhu uživatelského testování}
 
-Pro otestování jsme získali tolik a tolik uživatelů.
+Papírový prototyp otestovalo 7 uživatelů pokrývajících všechny uživatelské skupiny. Zpětnou vazbu jsme získali od pozorovatele osobní interakce a z dotazníku \todo{uvést, že jsou v příloze}
 
-mám 2 zdroje, dotazník a zápisky z testování...
+Na fotografii z průběhu testování (Obr. \ref{obr05:ukazka-testovani}), je zachycena situace přidávání mapování do existujícího schématu.
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[height=90mm]{../img/ukazka-testovani}
+  \caption{Porovnání papírové lišty (vlevo) s lištami existujících aplikací}
+  \label{obr05:ukazka-testovani}
+\end{figure}
+
+V průběhu testování jsme do aplikace přidali vyskakující okna s potvrzením o úspěšně provedené akci (například uložení souboru). 
+
 
 ... Díky konzistenci v aplikaci uživatelé v posledním úkolu nebyli špatní
+
+dát sem nějakou zajímavost, nebo věc co nás na testování překvapila (nějaký zajímavý závěr)
 
 Úvodní obrazovka je tvořená z levé lišty, která obsahuje tlačítka pro otevření hlavních částí aplikace a z volného prostoru -> z toho závěr: volný prostor nahradit úvodem s nějakou základní nápovědou pro uživatele. Tu jsme tam nedávali hned na začátku, ale nakonec nás to napadlo a uživatelé to potvrdily (+ odkaz na úvodní vs code obrázek)
