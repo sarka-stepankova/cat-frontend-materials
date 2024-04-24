@@ -33,12 +33,12 @@ Při návrhu se zaměřujeme na dostupnost různých částí aplikace. U těch,
 
 Neoficiální pravidlo tří kliků (3-click rule) tvrdí, že přístup k jakékoli informaci v aplikaci by neměl být delší než tři kliknutí. Vzniklo z přesvědčení, že budou uživatelé frustrovaní a opustí aplikaci, když nenaleznou hledanou informaci do tří kliků. Pravidlo je ale příliš zjednodušené a nezohledňuje složité interakce. Dosažení nízkého počtu kliků s sebou nese riziko, že budeme ignorovat vše ostatní. Může vést i k frustraci uživatelů způsobené obšírnými navigacemi. Proto se pravidlem přímo neřídíme, ale snažíme se minimalizovat počet kliků, když to jde.
 
-Chceme, aby se uživatel ocitl v pro něj známém (intuitivním) prostředí. Jako inspirace nám posloužily existující webové nástroje a desktopové aplikace. Úvodní obrazovka je tvořená z levé lišty (Obr. \ref{obr05:listy}), která obsahuje tlačítka pro otevření hlavních částí aplikace (spojení s databázovými instancemi, modelování, vytváření mapování), a volného prostoru. Podobnou lištu lze nalézt například v nástrojích pgModeler\footnote{\url{https://pgmodeler.io/}}, sqlDMB\footnote{\url{https://sqldbm.com/Home/}} a VS Code\footnote{\url{https://code.visualstudio.com/}}. Počítáme s tím, že až budou přibývat funkčnosti dalších nástrojů, budou přibývat tlačítka v levé liště.
+Chceme, aby se uživatel ocitl v pro něj známém (intuitivním) prostředí. Jako inspirace nám posloužily existující webové nástroje a desktopové aplikace. Úvodní obrazovka je tvořená z levé lišty (Obr. \ref{obr05:listy}), která obsahuje tlačítka pro otevření hlavních částí aplikace (spojení s databázovými instancemi, modelování, vytváření mapování), a volného prostoru. Podobnou lištu lze nalézt například v nástrojích pgModeler\footnote{\url{https://pgmodeler.io/}}, sqlDMB\footnote{\url{https://sqldbm.com/Home/}} a VS Code\footnote{\url{https://code.visualstudio.com/}} (Obr. \ref{obr05:listy}). Počítáme s tím, že až budou přibývat funkčnosti dalších nástrojů, budou přibývat tlačítka v levé liště.
 
 \begin{figure}[htb]
   \centering
   \includegraphics[height=70mm]{../img/listy}
-  \caption{Porovnání papírové lišty (vlevo) s lištami existujících aplikací}
+  \caption{Porovnání papírové lišty (vlevo) s lištami existujících aplikací.}
   \label{obr05:listy}
 \end{figure}
 
@@ -53,6 +53,9 @@ Draw.io hlavně pro druhou část (modelování schémat) - inspirace u ER. Pone
 
 Další nápady:
 - konkrétní návrh -> popsání hlavní obrazovky, zaměření se na plovoucí komponenty
+- zmínit, že všechny komponenty papírového mockupu jsou v příloze
+
+Všechny papírové komponenty prototypu jsou naskenovaná v příloze \ref{priloha3}.
 
 \section{Uživatelské testování}
 
@@ -69,16 +72,14 @@ Po otestování zodpovíme zbývající otázky od uživatele. Případně disku
 
 \section{Závěr z uživatelského testování}
 
-\todo{Do téhle podkapitoly dát obrázek z průběhu uživatelského testování}
+Papírový prototyp otestovalo sedm uživatelů pokrývajících všechny uživatelské skupiny. Zpětnou vazbu jsme získali ze zápisků od pozorovatele a z dotazníku \todo{uvést, že jsou v příloze}.
 
-Papírový prototyp otestovalo 7 uživatelů pokrývajících všechny uživatelské skupiny. Zpětnou vazbu jsme získali od pozorovatele osobní interakce a z dotazníku \todo{uvést, že jsou v příloze}
-
-Na fotografii z průběhu testování (Obr. \ref{obr05:ukazka-testovani}), je zachycena situace přidávání mapování do existujícího schématu.
+Pro představu průběhu uživatelského testování (Obr. \ref{obr05:ukazka-testovani}) je zachycena situace přidávání mapování do existujícího schématu.
 
 \begin{figure}[htb]
   \centering
   \includegraphics[height=90mm]{../img/ukazka-testovani}
-  \caption{Porovnání papírové lišty (vlevo) s lištami existujících aplikací}
+  \caption{Ukázka rozložení aplikace při uživatelském testování.}
   \label{obr05:ukazka-testovani}
 \end{figure}
 
