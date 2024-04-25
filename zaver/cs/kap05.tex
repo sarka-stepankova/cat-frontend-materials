@@ -1,9 +1,5 @@
 \chapter{Low-fidelity prototyp}
 
-\todo[inline, color=blue!30]{UPDATE: Postupně přidávám další kapitoly. Není dokončené, zatím v procesu.}
-
-\todo[inline, color=blue!30]{Do téhle kapitoly by se ještě mělo vejít porovnání různých nástrojů a proč jsme se tak rozhodli.}
-
 Po storyboardech, které nám ukázali možné sekvence akcí, vytvoříme prototyp aplikace, se kterým budou interagovat uživatelé. V rámci ročníkového projektu vytvoříme jen low-fidelity prototyp. Tedy se budeme zabývat vytvořením rané verze aplikace, která nebude věrnou kopií aplikace výsledné. V této fázi, chceme hlavně rychle vytvořit prototyp, na kterém můžeme vyhodnocovat nápady a zároveň ho můžeme otestovat na uživatelích spadajících do jednotlivých uživatelských skupin, které jsme si definovali.
 
 \section{Paper prototyping (mockups)}
@@ -44,18 +40,18 @@ Chceme, aby se uživatel ocitl v pro něj známém (intuitivním) prostředí. J
 
 V části aplikace pro správu databázových instancí vytvoříme lištu s již existujícími spojeními a jednoduchý formulář, který bude umožňovat přidání nové instance.
 
-  ... Railway aplikace, Draw.io (hlavně u ER modelování ta obrazovka vlevo) 
-V mockupu popsat jednotlivé komponenty a napsat k nim, tady jsme se inspirovali tím a tím,
+U vytváření části aplikace s modelováním schématu nám jako inspirace posloužil nástroj Draw.io\footnote{\url{https://app.diagrams.net/}}. Konkrétně hlavně u ER modelování lišta vlevo (Obr. \ref{obr05:er-lista}) a jednotlivé komponenty, které se přidávají na plochu. Do našeho papírového návrhu jsme totiž přidávali, místo vytváření cathegory schema, vytváření ER modelu. Proto, abychom uživateli představili něco jednoduššího s čím se už pravděpodobně setkal. 
 
-Pak jen formulář a náhled (podobné).
+\begin{figure}[]
+  \centering
+  \includegraphics[height=30mm]{../img/er-lista-drawio}
+  \caption{ER lišta z nástroje Draw.io, sloužící jako inspirace.}
+  \label{obr05:er-lista}
+\end{figure}
 
-Draw.io hlavně pro druhou část (modelování schémat) - inspirace u ER. Ponechávat co největší bílé okno pro pohodlné modelování a dost místa na umísťování komponent.
+Snažili jsme se ponechat co nejvíc volné bílé plochy pro pohodlné modelování a dost místa na umisťování komponent. Dodatečné lišty, sloužící k úpravě vlastnostní jednotlivých komponent, jsme vytvořili plovoucí, tak aby je uživatel mohl přetáhnout, pokud by někde překážely a aby zabíraly co nejméně místa.
 
-Další nápady:
-- konkrétní návrh -> popsání hlavní obrazovky, zaměření se na plovoucí komponenty
-- zmínit, že všechny komponenty papírového mockupu jsou v příloze
-
-Všechny papírové komponenty prototypu jsou naskenované v příloze \ref{priloha3}.
+Pro přidávání mapování do schématu jsme se drželi podobné struktury jako u vytváření schématu. Všechny papírové komponenty prototypu jsou naskenované v příloze \ref{priloha3}.
 
 \section{Uživatelské testování}
 
@@ -84,8 +80,6 @@ Pro představu průběhu uživatelského testování je na Obrázku \ref{obr05:u
 \end{figure}
 
 V průběhu testování na uživatelích jsme do aplikace přidali vyskakující okna s potvrzením o úspěšně provedené akci (například uložení souboru).
-
-Protože úvodní obrazovka byla...
 
 V dotazníku uživatelům připadala aplikace konzistentní a nic neodvádělo jejich pozornost od komponent na které v dalších krocích klikali. Díky konzistenci rozložení v aplikaci se uživatelé po splnění prvního úkolu pohybovali rychleji.
 
