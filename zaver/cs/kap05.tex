@@ -55,7 +55,7 @@ Další nápady:
 - konkrétní návrh -> popsání hlavní obrazovky, zaměření se na plovoucí komponenty
 - zmínit, že všechny komponenty papírového mockupu jsou v příloze
 
-Všechny papírové komponenty prototypu jsou naskenovaná v příloze \ref{priloha3}.
+Všechny papírové komponenty prototypu jsou naskenované v příloze \ref{priloha3}.
 
 \section{Uživatelské testování}
 
@@ -72,9 +72,9 @@ Po otestování zodpovíme zbývající otázky od uživatele. Případně disku
 
 \section{Závěr z uživatelského testování}
 
-Papírový prototyp otestovalo sedm uživatelů pokrývajících všechny uživatelské skupiny. Zpětnou vazbu jsme získali ze zápisků od pozorovatele a z dotazníku \todo{uvést, že jsou v příloze}.
+Papírový prototyp otestovalo sedm uživatelů pokrývajících všechny uživatelské skupiny. Zpětnou vazbu jsme získali ze zápisků od pozorovatele a z dotazníku. Všechny zápisky, dotazník i odpovědi na dotazník lze nalézt v příloze \ref{priloha4}
 
-Pro představu průběhu uživatelského testování (Obr. \ref{obr05:ukazka-testovani}) je zachycena situace přidávání mapování do existujícího schématu.
+Pro představu průběhu uživatelského testování je na Obrázku \ref{obr05:ukazka-testovani} zachycena situace přidávání mapování do existujícího schématu.
 
 \begin{figure}[htb]
   \centering
@@ -83,11 +83,14 @@ Pro představu průběhu uživatelského testování (Obr. \ref{obr05:ukazka-tes
   \label{obr05:ukazka-testovani}
 \end{figure}
 
-V průběhu testování jsme do aplikace přidali vyskakující okna s potvrzením o úspěšně provedené akci (například uložení souboru). 
+V průběhu testování na uživatelích jsme do aplikace přidali vyskakující okna s potvrzením o úspěšně provedené akci (například uložení souboru).
 
+Protože úvodní obrazovka byla...
 
-... Díky konzistenci v aplikaci uživatelé v posledním úkolu nebyli špatní
+V dotazníku uživatelům připadala aplikace konzistentní a nic neodvádělo jejich pozornost od komponent na které v dalších krocích klikali. Díky konzistenci rozložení v aplikaci se uživatelé po splnění prvního úkolu pohybovali rychleji.
 
-dát sem nějakou zajímavost, nebo věc co nás na testování překvapila (nějaký zajímavý závěr)
+Uživatelé používali i otazník s nápovědou v hlavní liště. Původním předpokladem bylo, že uživatelé budou skeptiční a raději budou zkoušet klikat na různé prvky. Několik z nich si taky všimlo, že na úvodní obrazovku, která je tvořená jen z levé lišty a jinak je prázdná, by bylo dobré přidat nějaký úvodní text s nabídkou úkonů, které může uživatel začít dělat, pro rychlejší orientaci, když aplikaci otevře. Takovou nabídku jsme do aplikace nepřidávali, ale nakonec nás to napadlo a uživatelé nám domněnku potvrdili.
 
-Úvodní obrazovka je tvořená z levé lišty, která obsahuje tlačítka pro otevření hlavních částí aplikace a z volného prostoru -> z toho závěr: volný prostor nahradit úvodem s nějakou základní nápovědou pro uživatele. Tu jsme tam nedávali hned na začátku, ale nakonec nás to napadlo a uživatelé to potvrdily (+ odkaz na úvodní vs code obrázek)
+S jedním uživatelem jsme diskutovali rozložení hlavních funkcí. Poukázal na to, že by nebylo špatné schovat vytváření databázových spojení místo první funkce někam, aby k tomu měl přístup hlavně administrátor a expertní uživatel a obecně, aby se méně zkušeným uživatelům tahle možnost nenabízela. Určitě plánujeme zapojit tento poznatek do dalšího návrhu a v hlavní liště schovat nebo alespoň prohodit tlačítka urená hlavně pro expertní uživatele.
+
+Obecně měli uživatelé problém s posledním úkolem, kde vytvářeli mapování. Protože je to ale úkol hlavně pro expertní uživatele, byly takové problémy očekávané. Naopak formulář pro přidávání DB komponenty pochopili všichni velmi rychle.
