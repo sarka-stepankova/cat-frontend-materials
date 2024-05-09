@@ -1,78 +1,37 @@
 \pagestyle{plain}  % kvuli cislovani stranek
 
-\chapter{Sada nástrojů}
+\chapter{Sada nástrojů, Úvod??}
 
+Relativně nedávno vzniklé NoSQL a další moderní databázové systémy umožnily vytvářet databáze založené na jiných logických modelech než jen na tradičních relačních (např. klíč-hodnota, dokumentové, grafové). I když některé systémy vypadají podobně, neexistují mezi nimi univerzální standardy, které by nám umožnily zaměnitelné použití. Částečné řešení lze nalézt u multi-modelových databází. Do jednoho systému lze začlenit více modelů tak, že spolu koexistují v různých vzájemně propojených formátech a modelech. Propojení může fungovat různými způsoby. Jeden model může být vlžen do druhého, entity z jednoho ukazující na entity z druhého, nebo redundance dat uložena ve více modelech. Stále ale neexistuje obecný způsob, jak modelovat multi-modelová data, nebo je transformovat z jednoho modelu do druhého.
+
+Problémem jednotného modelování a reprezentace dat, jako i řízení jejich vývoje, se zabývají P. Koupil a I. Holubová v článku o jednotné reprezentaci a transformaci multi-modelových dat pomocí teorie kategorií (category theory) \cite{cat_theory}. Snaží se formálně podchytit výše zmiňované problémy. Jejich přístup umožňuje propojit různé modely a vybírat způsob kombinace. Další výhodou je jednotné dotazování nad daty, migrace mezi modely a vývoj modelu a sním i dat. Všechno by mělo být možné bez nutnosti znát specifika propojených modelů. Zároveň je docíleno určité jednoduchosti v návrhu díky tomu, že teorii kategorií převádějí na grafovou reprezentaci. Uvádějí, že je pak praktické využití snažší.
+
+V návaznosti na přístup pomocí teorie kategorií vzniklo několik článků, které navrhují, jak implementovat teoreticky navržené funkcionality. Ne všechna data mají předem definované schéma. Funkčnost MM-infer \cite{MM_infer} se snaží schéma zpětně zrekonstruovat z~již uložených multi-modelových dat. Dotazováním nad multi-modelovými daty se zabývá článek o MM-quecat \cite{MM_quecat}. A v neposlední řadě evoluci dat navrhuje článek o MM-evocat \cite{MM_evocat}. Funkcionality a k nim vznikající nástroje, byly většinou vytvářeny odděleně. 
+
+Protože se funkce hodí k využití propojené (nechceme se dotazovat nad multi-modelovými daty bez možnosti jejich vytvoření, vytvořená schémata bychom rádi ještě upravovali apod.), vznikl nástroj MM-cat \cite{MM_cat}, který se je postupně snaží sjednotit.
 
 \section{MM-cat}
+MM-cat framework je navržený tak, aby řešil složitosti spojené s~návrhem a~správou multi-modelových databází. Jeho hlavním úkolem je vytvářet kategorický model (multi-modelové schéma). Umí ho dekomponovat a~umožňuje uživateli, aby si zvolil mapování na příšlušné DBMS (Database Management System). Kategorický model, mapování a~základy konceptuálního modelování popisuje článek MM-evocat \cite{MM_evocat}. Řeší i případy, kdy se struktura dat v~čase mění tak, aby například vyhovovala novým uživatelským požadavkům. Takové změny jsou pak propagovány napříč definovanými modely a~datovými instancemi. Slouží i~jako základ pro rozšíření o~složitější úkoly. 
 
-MM-cat framework je navržený tak, aby řešil složitosti spojené s~návrhem a~správou multi-modelových databází. Jeho hlavním úkolem je modelování multi-modelových schémat a~jejich mapování na příšlušné DBMS (Database Management System). Slouží i~jako základ pro rozšíření o~složitější úkoly.
+MM-cat je framework, který má zatím nedokončené grafické webové rozhraní. Při vzniku nástroje nebyl kladený důraz na jeho návrh a možnosti dalšího rozšíření. Proto se následující práce zabývá návrhem nového uživatelského rozhraní, které má být vytvořeno nezávisle na existujícím. 
 
-Typickým scénářem použití je vytvoření ER (entity-relationship) schématu uživatelem. Takové schéma je pak automaticky převedeno do jednotné kategorické reprezentace, která umožňuje namapování na kombinaci DBMS. Díky specifikaci schématu je vytvořen skript s~příkazy CREATE, které se aplikují na přiřazené DBMS. Uživatel může následně dál upravovat ER~diagram, nebo provádět \mbox{SELECT} dotazy.
-
-Na ukázce uživatelského rozhraní (Obrázek \ref{obr01:mm-cat}) je výsledek typického scénáře rozebraného v~předchozím odstavci. Na levé straně je uživatelem vytvořený ER diagram, na straně pravé pak jeho kategorická reprezentace. Na pravé straně ještě stojí za povšimnutí panel s~přístupovými cestami (značené oranžově) a~CREATE příkaz.
+Když se podíváme třeba na otevřené schéma (Obr. \ref{obr01:mm-cat}) ve webové aplikaci, objevují se v pravé i levé dolní liště tlačítka, která často nemají žádnou funkci. Levá lišta se mění na jinou po přístupu do jiných částí aplikace, což alespoň ze začátku používání aplikace může být matoucí.
 
 \begin{figure}[htb]
   \centering
-  \includegraphics[height=75mm]{../img/mm-cat}
+  \includegraphics[height=90mm]{../img/mm-cat}
   \caption{Ukázka uživatelského rozhraní nástroje MM-cat.}
   \label{obr01:mm-cat}
 \end{figure}
 
-Další možnosti použití, i~podrobnější popis nástroje, lze nalézt v~článku o MM-cat nástroji \cite{MM_cat}.
+V horní liště je pak umístěný název otevřeného schématu „Basic Schema“. Pozice v liště, která vypadá jako navigační menu, nemusí být intuitivní. Na další omezení a nejasnosti uživatel narazí při dalším používání. Často je potřeba podívat se do dokumentace, co vlastně nástroj dělá a která tlačítka fungují.
 
+\section{Postup návrhu uživatelského rozhraní}
 
-\section{MM-infer}
+Návrh uživatelského rozhraní jsme rozdělili do 4 bodů. Začneme definováním cílových skupin uživatelů, kteří budou aplikaci používat. O tom proč je důležité začít právě tímhle se zabývají autoři knihy Designing Interfaces \cite{Designing_ifaces_2nd_edition} na začátku první kapitoly.
 
-Ne všechna data mají předem definované schéma. Nástroj MM-infer se snaží schéma zpětně zrekonstruovat z~již uložených multi-modelových dat. Je schopen odhalit intra- a~inter-modelové reference a~překrývání modelů. Zároveň nástroj umí efektivně zpracovávat velké množství dat.
+Následuje definování běžných úkolů, které budou uživatelé v aplikaci dělat, a hierarchická analýza úkolů (HTA). Tím si načrtneme představu o všech krocích, které povedou ke splnění úkolu.
 
-MM-infer podporuje tři druhy DBMS, vybrané tak, aby bylo pokryto co nejvíc funkcí takových systémů. PostreSQL byl vybraný jako zástupce schema-full, relační DBMS. Neo4j reprezentuje schema-less a~MongoDB obojí. 
+Storyboardy budou další zastávkou. Můžeme si je představit jako komiksy o plnění úkolů uživateli se zdárným koncem. Díky tomu se zamyslíme, jak se uživatelé chovají při plnění úkolů.
 
-Rozhraní aplikace nás provede hned několika kroky, jejichž výsledkem je globální schéma pro vybranou množinu DBMS. Uživatel musí nejdřív takové DBMS vybrat (Obrázek \ref{obr01:mm-infer-load-database}). V~levém panelu je osa ukazující již splněné a~následující kroky, pro lepší orientaci v~procesu.
-
-\begin{figure}[htb]
-  \centering
-  \includegraphics[height=75mm]{../img/mm-infer-load-database}
-  \caption{Načtení databází v~nástroji MM-infer.}
-  \label{obr01:mm-infer-load-database}
-\end{figure}
-
-Podle vybraných databází a~dalších parametrů je vytvořen RSD (Record Schema Description), sjednocující reprezentace. Po automatickém načtení je pak předána ruka uživateli, který kontroluje navržené kandidáty. Výsledkem je vizualizace globálního schématu (Obrázek \ref{obr01:mm-infer-result}).
-
-\begin{figure}[htb]
-  \centering
-  \includegraphics[height=75mm]{../img/mm-infer-result}
-  \caption{Vizualizace globálního schématu v~nástroji MM-infer.}
-  \label{obr01:mm-infer-result}
-\end{figure}
-
-Aplikace příjemně provádí uživatele všemi potřebnými kroky. Nemá zbytečně příliš různých grafických prvků, které by uživatele zahlcovaly. Stejně jako mm-cat využívá dvou oken pro diagramy vedle sebe.
-
-Další informace o~návrhu a~možnostech použití aplikace lze nalézt v~článku o MM-infer \cite{MM_infer}.
-
-\section{MM-evocat}
-
-MM-evocat je nástroj pro modelování a~správu evoluce v~multi-modelových datech. Řeší případy, kdy se struktura dat v~čase mění tak, aby například vyhovovala novým uživatelským požadavkům. Takové změny jsou pak propagovány napříč definovanými modely a~datovými instancemi.
-
-Umožňuje vytvářet kategorický model, umí ho dekomponovat a~umožňuje uživateli, aby si zvolil mapování na podporované DBMS. MM-cat podporuje stejné druhy systémů jako framework MM-infer (PostreSQL, Neo4j, MongoDB).
-
-Kategorický model, mapování a~základy konceptuálního modelování popisuje článek MM-evocat \cite{MM_evocat}.
-
-MM-evocat má grafické webové rozhraní.
-
-\todo[inline, color=blue!30]{TODO: rozepsat rozhraní. }
-
-\section{MM-quecat}
-
-Více v~článku o MM-quecat \cite{MM_quecat}.
-
-\todo[inline, color=blue!30]{TODO: dopsat vše ke quecat. }
-
-\section{Nápady k této sekci, dočasná kapitola}
-
-The Importance of the User Interface (v knize Galitz, W. O. The Essential Guide to User Interface Design. Wiley, 2002., tahle kniha je uvedená jako zdroj předmětu https://dcgi.fel.cvut.cz/courses/nur) -> proč vlastně děláme lepší návrh, je tam i user memory a obecně jak pracuje uživatel.
-
-Dost podobné Designing Interfaces (co doporučil Jáchym)
-
-Napsat motivaci pro sjednocení všech nástrojů.
-
-Postupně vznikající nástroje, každý v jiné fázi návrhu, potřeba sjednotit funkce. 
+Nakonec vytvoříme papírový prototyp aplikace a otestujeme jeho použitelnost na reálných uživatelích.
