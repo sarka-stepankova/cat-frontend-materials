@@ -1,12 +1,22 @@
 \chapter*{Úvod}
 \addcontentsline{toc}{chapter}{Úvod}
 
-V~rámci GAČR projektu Unified Management of Multi-Model Data (č. 20-22276S) 
-byla navržena sada nástrojů pro modelování a~správu multi-modelových dat, 
-např. MM-cat a~MM-evocat. Nástroje vznikaly postupně a~za podpory různých 
-lidí. Díky tomu nemají jednotné rozhraní pro práci. Navíc jsou současná 
-rozhraní často nepřehledná a~uživatelsky nepřívětivá. Proto se v~rámci 
-ročníkového projektu zabýváme návrhem sjednoceného rozhraní. Důraz je 
-kladen na návrh vhodného uživatelského rozhraní a~jeho udržovatelnost.
+Se současným rostoucím objemem dat, roustou i nároky na jejich efektivní správu a zpracování. Tradiční relační databáze, které dlouhou dobu dominovaly v oblasti ukládání dat, začínají narážet na své limity. Problém představuje například práce s velkými objemy nestrukturovaných dat, nebo změny požadavků na strukturu uložených informací.
 
-Práce je soustředěna hlavně na nástroj MM-cat. A~to tak, aby bylo možné rozšířit aplikaci o~další nástroje. Výsledkem práce je návrh low-fidelity prototypu MM-cat a~jeho otestování na vybraném vzorku reálných uživatelů.
+V posledních letech se proto začaly prosazovat nové typy databázových systémů, které umožňují vytvářet databáze založené na alternativních logických modelech, jako jsou klíč-hodnota, dokumentové nebo grafové databáze. Tyto systémy, známé jako NoSQL, přinášejí nové možnosti pro ukládání a zpracování dat. Zároveň ale s sebou přinášejí i nové výzvy v oblasti správy a integrace dat.
+
+Mezi výzvy patří nedostatek standardizace a propojení mezi různými typy databází. Zatímco některé systémy mohou být na první pohled podobné, neexistuje univerzální standard, který by umožňoval zaměnitelné použití.
+
+V této práci se zaměříme na problematiku správy multi-modelových databází, které umožňují integraci více logických modelů do jednoho systému. Konkrétně se budeme zabývat analýzou a návrhem uživatelského rozhraní pro framework MM-cat \cite{MM_cat}, který je navržený pro správu a integraci multi-modelových databází. Cílem naší práce je vytvořit návrh uživatelsky přívětivého rozhraní, které usnadní práci s multi-modelovými daty a zlepší použitelnost pro uživatele.
+
+\medskip \medskip
+
+Nyní se podíváme na stručný obsah jednotlivých kapitol:
+
+\begin{itemize}
+    \item V první kapitole popíšeme existující funkcionality a nástroje pro správu multi-modelových dat, včetně nástroje MM-cat. Stručně Rozebereme i klady a zápory současného grafického rozhraní MM-cat.
+    \item Další kapitoly se budou zabývat návrhem uživatelského rozhraní. Začneme v první kapitole definováním cílových skupin uživatelů, kteří budou aplikaci používat. Je dobře známo, že by se analýzou uživatelů mělo začínat právě v této fázi \cite{Designing_ifaces_2nd_edition}.
+    \item Ve třetí kapitole provedeme hierarchickou analýzu úkolů (HTA), které budou uživatelé v aplikaci provádět. Tím si načrtneme představu o všech krocích, které povedou ke splnění úkolu, nezávisle na grafickém rozhraní.
+    \item Další kapitola nabídne návrh storyboardů. Můžeme si je představit jako komiksy, zobrazující průběh plnění úkolů uživateli s úspěšným dokončením. Tento přístup nám umožní lépe porozumět chování uživatelů při plnění úkolů a identifikovat jejich preference.
+    \item Nakonec, v páté kapitole, vytvoříme papírový prototyp aplikace a otestujeme jeho použitelnost na reálných uživatelích.
+\end{itemize}
